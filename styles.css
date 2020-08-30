@@ -1,0 +1,72 @@
+.container-fluid {
+    background: dodgerblue;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    border: 2px solid #334;
+    box-shadow: 10px 10px 15px #3334;
+    position: relative;
+    transition: 2s ease-in-out;
+    animation: drop 1s both 500ms alternate;
+}
+
+main {
+    padding: 2.5rem;
+}
+
+.content h2 {
+    text-align: center;
+    position: relative;
+    padding: 2.3rem 0;
+}
+
+.brand {
+    background: #ffe6;
+    color: #4457f2;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.input-field,
+.age {
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+footer {
+    margin-top: 2.5rem;
+    text-align: left;
+    margin-bottom: -2.5rem;
+}
+
+footer p a {
+    color: #fff;
+}
+
+@keyframes drop {
+    0% {
+        top: -100%;
+    }
+    25% {
+        top: 0%;
+    }
+    50% {
+        top: -10%
+    }
+    75% {
+        top: 0%
+    }
+    100% {
+        top: -5%
+    }
+}
